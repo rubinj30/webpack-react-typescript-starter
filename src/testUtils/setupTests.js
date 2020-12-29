@@ -3,7 +3,7 @@
 global.console = {
   // console.errors will be ignored in tests
   error: jest.fn(),
-  // Keep native behaviour for other methods, use those to print out things in your own tests
+  // Keep native behavior for other methods, use those to print out things in your own tests
   log: console.log,
   warn: console.warn,
   info: console.info,

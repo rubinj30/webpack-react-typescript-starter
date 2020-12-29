@@ -24,10 +24,8 @@ module.exports = {
       },
     },
   },
+  ignorePatterns: ["**/testUtils/*.tsx"],
   rules: {
-    // TYPESCRIPT
-    'typescript-eslint/explicit-module-boundary-types': 'off',
-
     // REACT
     'react-hooks/exhaustive-deps': 'off',
     'react/prop-types': 'off',

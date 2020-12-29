@@ -4,7 +4,7 @@ module.exports = {
     '^.+\\.js$': 'babel-jest',
     '^.+\\.tsx?$': 'ts-jest',
   },
-  setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
+  setupFilesAfterEnv: ['<rootDir>/src/testUtils/setupTests.js'],
   globals: {
     'ts-jest': {
       diagnostics: false,
@@ -14,6 +14,7 @@ module.exports = {
   testEnvironment: 'jsdom',
   testRegex: '(/src/.*.(test|spec)).(jsx?|tsx?)$',
   moduleNameMapper: {
+    // Will need this for tests if you want to use CSS or SCSS
     // '\\.(scss|css)$': 'identity-obj-proxy',
   },
   setupFiles: [],

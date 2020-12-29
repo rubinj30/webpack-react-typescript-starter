@@ -4,7 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "target": "es6",
     "module": "ESNext",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "strict": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,

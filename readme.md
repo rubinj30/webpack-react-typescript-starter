@@ -1,2 +1,1 @@
-# 개요
-React 개발 시 유용한 것 들을 모아놓은 저장소입니다.
+Boilerplate for React app using Typescript, with Webpack as the bundler.

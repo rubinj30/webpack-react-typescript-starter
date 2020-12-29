@@ -1,7 +1,21 @@
 {
-  "name": "typescript-react-webpack",
+  "name": "webpack-react-typescript-starter",
   "version": "1.0.0",
   "license": "MIT",
+  "author": "rubinj30",
+  "homepage": "https://github.com/rubinj30/webpack-react-typescript-starter",
+  "keywords": [
+    "react",
+    "webpack",
+    "typescript",
+    "styled-components",
+    "starter",
+    "boilerplate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubinj30/webpack-react-typescript-starter"
+  },
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

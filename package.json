@@ -20,6 +20,25 @@
     "type": "git",
     "url": "git+https://github.com/rubinj30/webpack-react-typescript-starter"
   },
+  "scripts": {
+    "start": "npx webpack serve --mode development",
+    "build": "NODE_ENV=production npx webpack --mode production --progress",
+    "build:dev": "npx webpack --mode development",
+    "prettify": "yarn prettier \"**/*.*(js|jsx|ts|tsx)\" --ignore-path=.prettierignore --write",
+    "lint": "eslint src --ext .ts,.tsx && yarn prettify",
+    "test": "jest --coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged --verbose"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -53,23 +72,5 @@
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.0",
     "webpack-dev-server": "^3.11.0"
-  },
-  "scripts": {
-    "start": "npx webpack serve --mode development",
-    "build": "NODE_ENV=production npx webpack --mode production --progress",
-    "prettify": "yarn prettier \"**/*.*(js|jsx|ts|tsx)\" --ignore-path=.prettierignore --write",
-    "lint": "eslint src --ext .ts,.tsx && yarn prettify",
-    "test": "jest --coverage"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint-staged --verbose"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
   }
 }

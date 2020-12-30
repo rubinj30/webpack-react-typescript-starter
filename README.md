@@ -1,7 +1,7 @@
 # React App with Typescript Boilerplate
 This is a starter app for [React](reactjs.org) apps with [Typescript](typescriptlang.org), using [Webpack](webpackjs.org) as the bundler. I was setting it up for personal use, and figured I'd add some notes in case others wanted to use. 
 
-This includes the newest version of React (17.0.1), which means it no longer is necessary to import React into each file with components. This starter app uses TypeScript to transform (via the `"jsx": "react-jsx",` setting in the `tsconfig.json`). If your files with JSX are flagging this [make sure you are using the workspaces version of TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions), or upgrade TypeScript globally to be > 4.1.0. 
+This includes the newest version of React (17.0.1), which means it no longer is necessary to import React into each file with components. This starter app uses TypeScript to transform JSX to ES5 code, via the `"jsx": "react-jsx",` setting in the `tsconfig.json`. If your files with JSX are flagging this [make sure you are using the workspaces version of TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions), or upgrade TypeScript globally to be > 4.1.0. 
 
 ## Other base libraries included 
 [styled-components](https://www.styled-components.com/) for styling

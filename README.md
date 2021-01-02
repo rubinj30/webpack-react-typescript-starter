@@ -8,13 +8,12 @@ This includes the newest version of React (17.0.1), which means it no longer is 
 
 [react-router v5](reactrouter.com) for routing
 
-[ESLint](eslint.org) and [Prettier](prettier.io) for formatting/linting
+[ESLint](eslint.org) for linting
 
-### Formatting/Linting
-I'm not opinionated about most linter rules, other than believing it is important to have them setup in a project. This way you (or even your team) do not have to worry about formatting. Also, in a team environment having linting rules inside of a project can prevent a lot of unnecessary code changes that will cause attention to be diverted from real changes in Pull Requests. 
+### Linting
+I'm not opinionated about most linter rules, other than believing it is important to have them setup in a project. This way you (or even your team) do not have to worry about formatting details. Also, in a team environment having linting rules inside of a project can prevent a lot of unnecessary code changes that will cause attention to be diverted from real changes in Pull Requests. 
 
-This project is using ESLint and for linting/formatting. The [lint-staged](https://github.com/okonet/lint-staged) library is setup to lint/prettify the git staged files on each commit, to make sure all files being committed have been properly formatted.
-
+This project is using ESLint and for linting/formatting. Also, the [lint-staged](https://github.com/okonet/lint-staged) library is setup to lint the git staged files on each commit, to make sure all files being committed to master has been properly formatted.
 
 ## Getting Started
 

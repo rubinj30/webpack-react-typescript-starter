@@ -12,7 +12,6 @@
     "starter",
     "boilerplate",
     "eslint",
-    "prettier",
     "react-testing-library",
     "@testing-library/react"
   ],
@@ -24,8 +23,7 @@
     "start": "npx webpack serve --mode development",
     "build": "NODE_ENV=production npx webpack --mode production --progress",
     "build:dev": "npx webpack --mode development",
-    "prettify": "yarn prettier \"**/*.*(js|jsx|ts|tsx)\" --ignore-path=.prettierignore --write",
-    "lint": "eslint src --ext .ts,.tsx && yarn prettify",
+    "lint": "eslint src --ext .ts,.tsx,.js --fix",
     "test": "jest --coverage"
   },
   "husky": {
@@ -35,8 +33,7 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
+      "eslint --fix"
     ]
   },
   "dependencies": {

@@ -3,26 +3,31 @@ This is a starter app for [React](reactjs.org) apps with [Typescript](typescript
 
 This includes the newest version of React (17.0.1), which means it no longer is necessary to import React into each file with components. This starter app uses TypeScript to transform JSX to ES5 code, via the `"jsx": "react-jsx",` setting in the `tsconfig.json`. If your files with JSX are flagging this [make sure you are using the workspaces version of TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions), or upgrade TypeScript globally to be > 4.1.0. 
 
-## Other base libraries included 
-[styled-components](https://www.styled-components.com/) for styling
-
-[react-router v5](reactrouter.com) for routing
-
-[ESLint](eslint.org) for linting
-
-### Linting
-I'm not opinionated about most linter rules, other than believing it is important to have them setup in a project. This way you (or even your team) do not have to worry about formatting details. Also, in a team environment having linting rules inside of a project can prevent a lot of unnecessary code changes that will cause attention to be diverted from real changes in Pull Requests. 
-
-This project is using ESLint and for linting/formatting. Also, the [lint-staged](https://github.com/okonet/lint-staged) library is setup to lint the git staged files on each commit, to make sure all files being committed to master has been properly formatted.
-
 ## Getting Started
 
-Clone the repository. Then install the dependencies:
+Clone the repository:
 ```
-yarn install
+git clone https://github.com/rubinj30/webpack-react-typescript-starter.git
+```
+
+Install the dependencies:
+```
+yarn install (or npm install)
 ```
 
 Start the application and it will be running at http://localhost:8080:
 ```
-yarn start
+yarn start (or npm start)
 ```
+NOTE: if you end up using NPM, then you can remove the yarn.lock file and use the package-lock.json file
+
+## Other base libraries included 
+Styling - [styled-components](https://www.styled-components.com/) 
+
+Routing - [react-router v5](reactrouter.com)
+
+Testing React components - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) 
+
+Test runner - [Jest](https://jestjs.io)
+
+Linting/Formatting - [ESLint](eslint.org)/[Prettier](prettier.io)

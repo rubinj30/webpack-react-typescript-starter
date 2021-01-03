@@ -30,4 +30,10 @@ Testing React components - [React Testing Library](https://testing-library.com/d
 
 Test runner - [Jest](https://jestjs.io)
 
-Linting/Formatting - [ESLint](eslint.org)/[Prettier](prettier.io)
+Linting - [ESLint](eslint.org)
+
+Formatting - [Prettier](prettier.io)
+
+Pre-commit Hook - [husky](https://github.com/typicode/husky#readme)
+
+Ensure committed code changes are linted/formatted - [lint-staged](https://github.com/okonet/lint-staged)

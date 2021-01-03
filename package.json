@@ -24,7 +24,7 @@
     "start": "npx webpack serve --mode development",
     "build": "NODE_ENV=production npx webpack --mode production --progress",
     "build:dev": "npx webpack --mode development",
-    "prettify": "yarn prettier \"**/*.*(js|jsx|ts|tsx)\" --ignore-path=.prettierignore --write",
+    "prettify": "yarn prettier \"**/*.*(js|ts|tsx)\" --ignore-path=.prettierignore --write",
     "lint": "eslint src --ext .ts,.tsx && yarn prettify",
     "test": "jest --coverage"
   },
